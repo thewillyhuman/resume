@@ -26,7 +26,7 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
-\pagestyle{empty} % Suppress page numbers
+\pagestyle{plain} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address

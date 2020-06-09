@@ -22,13 +22,46 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=1.35in,top=0.9in,right=0.75in,bottom=0.9in]{geometry} % Document margins
+
+%\usepackage[all]{background}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{fancyhdr}
 
 \name{Guillermo Facundo Colunga} % Your name
 \address{Alcalde Luis Treillard 23, E2, 1D \\ Salinas, Asturias 33405} % Your address
 \address{(+34)~$\cdot$~639~$\cdot$~253~$\cdot$~273 \\ thewilly.work@gmail.com} % Your phone number and email
 
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+%\def\pictureOne{\begin{tikzpicture}\draw[red] (0,0)--(0,2)--(2,2)--(2,0)--cycle;\end{tikzpicture}}
+%\def\pictureTwo{\begin{tikzpicture}\draw[blue] (0,0)--(0,2)--(2,2)--(2,0)--cycle;\end{tikzpicture}}
+
+
+\pagestyle{fancy}
+
+\def\headrulewidth{0pt}
+\newlength{\ruleheight}
+\setlength{\ruleheight}{\textheight}
+\addtolength{\ruleheight}{20mm}
+\fancyhead{}
+\fancyhead[L]{%
+    \vbox to 0pt{%
+    \vskip 5mm \hbox{%
+        \hskip-5mm\vrule height\ruleheight%
+        %\hskip-25mm\vbox to \ruleheight{\pictureOne\vss\pictureTwo}
+        }%
+        \vss}}
+\fancyfoot{}
+\fancyfoot[C]{\footnotesize\thepage}
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -165,12 +198,12 @@ Duration: 60 hours
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\begin{rSection}{Technical Strengths / COnocimientos técnicos}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & ShExL, Java, Scala, SPARQL, ShEx, Kotlin, Python, C, C++, Rust,\\&Swift \\
+Computer Languages & ShExL, Java, Scala, SPARQL, ShEx, Kotlin, Python, C, C++,\\&Rust, Swift \\
 Protocols \& APIs & XML, JSON, RDF, REST, SSH \\
-Databases & MySQL, PostgreSQL, MongoDB, MariaDB, DynamoDB, Triplestores \\
+Databases & MySQL, PostgreSQL, MongoDB, MariaDB, DynamoDB,\\&Triplestores \\
 Tools & Git, IntelliJ, Eclipse \\
 OS & macOS, CentOS, Ubuntu, Red Hat, Windows, Windows Server \\
 \end{tabular}
@@ -188,6 +221,20 @@ OS & macOS, CentOS, Ubuntu, Red Hat, Windows, Windows Server \\
 
     {\bf  Business Booster Week 9ed Finalist} \hfill {\em May 2015} \\ 
     One of the seven finalist projects out of a total of 400 submitted. The reward was a 4-month startup acceleration program.
+    
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Conferences / Conferencias}
+
+    {\bf  JOU 2019} \hfill {\em February 2019} \\ 
+    Speaker at the engineering study table II at the University Orientation Day.
+
+    {\bf  JOU 2020} \hfill {\em February 2020} \\ 
+    Speaker at the engineering study table II at the University Orientation Day.
     
 \end{rSection}
 
