@@ -28,6 +28,9 @@
 \usepackage{lipsum}
 \usepackage{tikz}
 \usepackage{fancyhdr}
+\usepackage{rotating}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{datetime}
 
 \name{Guillermo Facundo Colunga} % Your name
 \address{Alcalde Luis Treillard 23, E2, 1D \\ Salinas, Asturias 33405} % Your address
@@ -39,8 +42,14 @@
 %	INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-%\def\pictureOne{\begin{tikzpicture}\draw[red] (0,0)--(0,2)--(2,2)--(2,0)--cycle;\end{tikzpicture}}
-%\def\pictureTwo{\begin{tikzpicture}\draw[blue] (0,0)--(0,2)--(2,2)--(2,0)--cycle;\end{tikzpicture}}
+\def\pictureOne{\framebox{{\Huge {\bf EN}}}}
+\def\pictureTwo{\begin{turn}{90} 
+    {\scriptsize {\bf Version Code:} \pdfdate}
+    \end{turn}
+    \begin{turn}{90}
+    {\scriptsize {\bf Last Version:} \url{https://github.com/thewilly/resume}}
+    \end{turn}
+    }
 
 
 \pagestyle{fancy}
@@ -54,7 +63,7 @@
     \vbox to 0pt{%
     \vskip 5mm \hbox{%
         \hskip-5mm\vrule height\ruleheight%
-        %\hskip-25mm\vbox to \ruleheight{\pictureOne\vss\pictureTwo}
+        \hskip-25mm\vbox to \ruleheight{\pictureOne\vss\pictureTwo}
         }%
         \vss}}
 \fancyfoot{}
@@ -67,7 +76,7 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education / Educación}
+\begin{rSection}{Education}
 
 {\bf IES Isla de la Deva, Asturias} \hfill {\em June 2013} \\ 
 High School degree with specialization in Science and Engineering \\
@@ -86,7 +95,7 @@ Rounded Mark: 7
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Languages / Idiomas}
+\begin{rSection}{Languages}
 
 {\bf Spanish} \hfill {\em Mother Language}\\ 
 Writing Level: Native \\
@@ -109,7 +118,7 @@ Speaking Level: Bilingual \\
 %	LICENSES SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Licenses / Carnets}
+\begin{rSection}{Licenses}
 
 {\bf European car driving license} \hfill {\em 14 points}\\ 
 License: B \hfill {\em 06.09.13} \\
@@ -127,7 +136,7 @@ License: Navigation license \hfill {\em 01.06.19} \\
 %	TITLES SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Titles / Títulos~$\cdot$~146 hours}
+\begin{rSection}{Titles~$\cdot$~146 hours}
 
 {\bf  Aquatic lifeguard} \hfill {\em 12.05.2019} \\ 
 Spanish Red Cross \\
@@ -152,7 +161,7 @@ Duration: 60 hours
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience / Experiencia profesional}
+\begin{rSection}{Experience}
 
 \begin{rSubsection}{Creator Stats}{May 2015 - December 2016}{Founding member, responsible for product design and communication}{Valencia, Spain}
 \item Founding member of the company with a 30\% stake.
@@ -198,7 +207,7 @@ Duration: 60 hours
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths / COnocimientos técnicos}
+\begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Computer Languages & ShExL, Java, Scala, SPARQL, ShEx, Kotlin, Python, C, C++,\\&Rust, Swift \\
@@ -214,7 +223,7 @@ OS & macOS, CentOS, Ubuntu, Red Hat, Windows, Windows Server \\
 %	AWARDS STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Awards / Premios}
+\begin{rSection}{Awards}
 
     {\bf  First Lego League Finalist} \hfill {\em February 2008} \\ 
     Finalist in the First Lego League competition with the Can Tangram team.
@@ -228,7 +237,7 @@ OS & macOS, CentOS, Ubuntu, Red Hat, Windows, Windows Server \\
 %	PRESENTATIONS STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Conferences / Conferencias}
+\begin{rSection}{Conferences}
 
     {\bf  JOU 2019} \hfill {\em February 2019} \\ 
     Speaker at the engineering study table II at the University Orientation Day.
